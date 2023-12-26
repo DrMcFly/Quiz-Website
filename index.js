@@ -50,39 +50,12 @@ const questions = [
     {
         question: "Marty is cool",
         answers: [
-            {text: "True", correct: "false"},
-            {text: "False", correct: "true"},
+            {text: "True", correct: "true"},
+            {text: "False", correct: "false"},
             {text: null, correct: null},
             {text: null, correct: null}         
         ]
     },
-    {
-        question: "I couldn't think of another one so the answer is 4",
-        answers: [
-            {text: "1", correct: "false"},
-            {text: "2", correct: "false"},
-            {text: "3", correct: "false"},
-            {text: "4", correct: "true"},            
-        ]
-    },
-    {
-        question: "Just testing out the code at this point",
-        answers: [
-            {text: "1", correct: "true"},
-            {text: null, correct: null},
-            {text: null, correct: null},
-            {text: null, correct: null},            
-        ]
-    },
-    {
-        question: "I didn't know I'd have to be creative as a programmer",
-        answers: [
-            {text: "1", correct: "true"},
-            {text: null, correct: null},
-            {text: null, correct: null},
-            {text: null, correct: null},            
-        ]
-    }
 ]
 
 function showQuestion() {
@@ -159,7 +132,7 @@ function submitAnswer() {
 
     } else if (nextButton.innerHTML == "Finish") {
         
-        questionNumDiv.innerHTML = "Completed! (The score feature isn't ready yet.)";
+        questionNumDiv.innerHTML = "Completed!";
         questionDiv.remove();
         answerButton.remove();
         nextButton.remove();
